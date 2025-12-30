@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Page</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Mobile-first */
+        .box {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        /* Tablet & Desktop */
+        @media (min-width: 768px) {
+            .box {
+                display: inline-block;
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+</div>
+
+</body>
+</html>

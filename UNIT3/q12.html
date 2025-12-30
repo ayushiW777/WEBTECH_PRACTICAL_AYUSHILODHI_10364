@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditions and Loops</title>
+    <script>
+        function demo() {
+            let num = 5;
+
+            // if-else
+            if (num % 2 == 0) {
+                document.write("Even Number<br>");
+            } else {
+                document.write("Odd Number<br>");
+            }
+
+            // for loop
+            document.write("For Loop:<br>");
+            for (let i = 1; i <= 5; i++) {
+                document.write(i + "<br>");
+            }
+
+            // while loop
+            document.write("While Loop:<br>");
+            let j = 1;
+            while (j <= 3) {
+                document.write(j + "<br>");
+                j++;
+            }
+
+            // do-while loop
+            document.write("Do-While Loop:<br>");
+            let k = 1;
+            do {
+                document.write(k + "<br>");
+                k++;
+            } while (k <= 2);
+        }
+    </script>
+</head>
+<body>
+
+<button onclick="demo()">Run Demo</button>
+
+</body>
+</html>

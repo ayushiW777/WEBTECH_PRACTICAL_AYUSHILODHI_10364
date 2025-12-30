@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+
+            if (name == "") {
+                alert("Name cannot be empty!");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+
+        function checkInput() {
+            alert("You are typing...");
+        }
+    </script>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+    Name:
+    <input type="text" id="name" oninput="checkInput()"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

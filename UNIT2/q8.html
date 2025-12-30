@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        /* Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* Class Selector */
+        .blue {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #main {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: green;
+        }
+
+        /* Group Selector */
+        h1, h2, h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="main">
+    <h1>CSS Selectors</h1>
+    <p>This is inside a div</p>
+</div>
+
+<p class="blue">This uses class selector</p>
+
+<h2>Grouped Heading</h2>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hide Elements</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<p id="para">This text can be shown or hidden</p>
+
+<button onclick="toggleText()">Show / Hide</button>
+<button onclick="toggleStyle()">Toggle Style</button>
+
+<script>
+    function toggleText() {
+        document.getElementById("para").classList.toggle("hidden");
+    }
+
+    function toggleStyle() {
+        document.getElementById("para").classList.toggle("highlight");
+    }
+</script>
+
+</body>
+</html>
